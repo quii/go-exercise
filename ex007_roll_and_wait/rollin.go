@@ -27,9 +27,9 @@ func game(player Player) {
 
 		wait := 6 - roll
 
-		time.Sleep(time.Duration(wait) * time.Second)
-
 		fmt.Printf(reportString, player.Name, player.Score, roll, wait)
+
+		time.Sleep(time.Duration(wait) * time.Second)
 	}
 }
 
